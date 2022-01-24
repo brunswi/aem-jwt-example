@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/jwt",
+        "create path (nt:unstructured) /content/dam/jwt/jcr:content",
+        "set properties on /content/dam/jwt/jcr:content\n  set cq:conf{String} to /conf/jwt\n  set jcr:title{String} to \"JWT\"\nend"
+    ]
+}
