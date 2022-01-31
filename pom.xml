@@ -536,6 +536,19 @@ Bundle-DocURL:
                 <artifactId>core.wcm.components.core</artifactId>
                 <version>${core.wcm.components.version}</version>
             </dependency>
+            <!-- auth0 JWT, JWKS -->
+            <dependency>
+                <groupId>com.auth0</groupId>
+                <artifactId>java-jwt</artifactId>
+                <version>3.17.0</version>
+            </dependency>
+            <!-- Lombok  -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.20</version>
+                <scope>provided</scope>
+            </dependency>
 
 
             <!-- Testing -->

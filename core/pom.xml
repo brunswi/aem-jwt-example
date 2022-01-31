@@ -43,6 +43,7 @@
                         </goals>
                         <configuration>
                             <bnd><![CDATA[
+Export-Package: com.auth0.jwt,com.auth0.jwt.impl,com.auth0.jwt.algorithms,com.auth0.jwt.exceptions,com.auth0.jwt.interfaces
 Import-Package: javax.annotation;version=0.0.0,*
                                 ]]></bnd>
                         </configuration>
@@ -95,8 +96,15 @@ Import-Package: javax.annotation;version=0.0.0,*
             <artifactId>core.wcm.components.core</artifactId>
             <scope>test</scope>
         </dependency>
-
-
+        <!-- auth0 JWT, JWKS -->
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
         <!-- Testing -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>

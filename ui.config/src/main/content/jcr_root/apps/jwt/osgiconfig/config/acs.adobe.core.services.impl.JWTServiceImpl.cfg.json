@@ -1,0 +1,5 @@
+{
+  "password":"$[env:jwt_service;default=secret]",
+  "userId":"jwt-user",
+  "expirationTime":"3600"
+}
